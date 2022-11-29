@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Primera pagina</title>
+</head>
+
+<body>
+    <form>
+        
+        <fieldset> <!--Ayuda a agrupar todo en recuadro ya sea texto o el mismo formulario-->
+        <legend > <strong>DATOS DEL USUARIO</strong> </legend> <!--Ayuda a poner un titulo al recuadro para que el usuario sepa que es-->
+
+            <label>Nombre</label> <!--<labe> es para poner a un lado del recuadro o input lo que se requiere-->
+            
+            <input placeholder="Panchito"/> <!--input es para poner un recuadro y pedir alguna informacion-->
+
+            <!--<placeholder> es para agregar un texto dentro del input el caul es solo para indicar lo que se requiere -->
+            
+            <br/><label>Edad</label>
+            <input type="number" placeholder="17"/> <!--Para agregar propiedas a las etiquetas se ponen despues y dentro de la etiqueta, por ejemplo number es para agregar en el recuadro una funcion de aumentar o disminuir numeros, solo acepta numeros-->
+    
+            <br/><label>Contraseña</label>
+             <input type="password"/> <!-- Lo que se escriba aqui va a cambiar por  *-->
+
+            <br/><label>Razón de tu solicitud</label>
+            <textarea></textarea > <!--Agrega una zona donde el usuario puede agregar mas informacion y tambien puede agrandar el area de este texto-->
+
+            <br/><label>Seleccione su dispositvo de ingreso</label>
+            <select> <!--Agrega un recuadro para elegir entre opciones-->
+        
+                <option value="Pc gamer">Pc gamer</option> 
+                <option value="Consola">Consola</option> 
+                <option value="Movil"> Movil</option> <!--El que esta entre <opcion></opcion> es lo que aparece, la proiedad value es lo que sirve para la base de datos-->
+        
+            </select>
+        <input type="submit"/> <!-- Es para enviar el valor del formulario o respuestas que se hayan adquirido, si se agrega value=, el nombre del boton cambiara  *-->
+
+        <button>Estoy de acuerdo</button> <!--Otra manera de poner submit de manera rapida-->
+        </fieldset>
+    </form>   <!--<form> es para hacer un formulario y pedir datos al usuario-->
+</body>
+
+</html>
