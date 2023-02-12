@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+.contenedor{
+    background: rgb(223, 71, 202);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+p{
+    font-size: xx-large;
+    padding: 15%;
+}
+
+button{
+    font-size: xx-large;
+    padding: 0.75em;
+}
+
+#yesBtn{
+    transform: translate(-100%,0);
+}
+
+#noBtn{
+    position: absolute;
+}
+main button#si{
+    left: calc(50% - (70px/2) - 70px);
+}
+main button#no{
+    left: calc(50% - (70px/2) + 70px);
+    transition-property: left, top;
+    transition-duration: 40ms;
+    transition-timing-function: linear;
+}
+/* main */
+main img{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - (273px / 2 ));
+    z-index: -1;
+}

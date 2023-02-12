@@ -1,0 +1,23 @@
+package matematicas;
+importjava.util.Scanner;
+public class Aritmetica
+{
+    public static void main (String args [])
+    { 
+        //Se crea un objeto llamdo leer la clase Scanner para leer la consola
+        Scanner leer= new Scanner (System.in);
+        //Se imprimen dos letreros y se leen dos valores
+        System.out.print("Dame un numero");
+        double valor_1 = leer.nextDouble();
+        System.out.print("Dame otro numero");
+        double valor_2=leer.nextDouble();
+        //Se crea un objeto llamado operacion de la clase Aritmetica, se llama automaticamente al constructor de la clase aritmetica y se le manda la cadena "Creando un objeto" como parametro
+        Aritmetica operacion=new Aritmetica("Creando un Objeto", valor_1,  valor_2)
+        //Con el objeto operacion se llaman los siguientes metodos operacion.multiplicar();, operacion.dividir();
+        //Se calcula la suma llamando al metodo sumar, notar que no se requiere declarar un objeto, basta con anteponer el nombre de la clase, porque sumar es static
+        double suma_1 = Aritmetica.sumar(valor_1, valor_2);
+        //Se imprime suma_1
+        System.out.println("Suma=" +suma_1)
+
+    }
+}
